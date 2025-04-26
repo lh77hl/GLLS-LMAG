@@ -165,7 +165,9 @@ function b = update_b(B, L1, L2, L3, Y2_1, Y2_2, Y2_3, mu)
     Id_input  = L3 - (1/mu) * Y2_3;
 
     numerator = GxT_input + GyT_input + Id_input + B;
-    denominator = 2 + 1; 
+    
+    % 构造系统矩阵近似，由于图像梯度算子的平方近似单位阵，因此直接简化为系数乘 I
+    denominator = 3 + 1; 
 
     b = numerator / denominator;
 end
