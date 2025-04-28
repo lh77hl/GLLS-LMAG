@@ -1,5 +1,5 @@
 function [X, E, obj, iter] = draft_GLLS_LMAG(M, opts)
-% Solve the GLLS-LMAG problem 
+% Solve the GLLS-LMAG problem
 % ---------------------------------------------
 % Input:
 %          M    -    n1*n2*n3 tensor
@@ -10,6 +10,8 @@ function [X, E, obj, iter] = draft_GLLS_LMAG(M, opts)
 %       E       -    n1*n2*n3 tensor
 %       obj     -    objective function value
 %       iter    -    number of iterations
+
+% Version 1.0 - 10/24/2024
 
 dim = size(M);
 d   = ndims(M);
