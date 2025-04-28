@@ -12,7 +12,9 @@ function [X, E, obj, iter] = draft_GLLS_LMAG(M, opts)
 %       iter    -    number of iterations
 
 % Version 1.0 - 10/24/2024
-
+% [1] J. Peng, Y. Wang, H. Zhang, J. Wang, and D. Meng, “Exact Decomposition of Joint Low Rankness and Local Smoothness Plus Sparse Matrices,” 
+%     IEEE Transactions on Pattern Analysis and Machine Intelligence, vol. 45, no. 9, pp. 5766-5781, 2022. 
+ 
 dim = size(M);
 d   = ndims(M);
 
