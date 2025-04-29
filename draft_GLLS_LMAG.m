@@ -53,6 +53,7 @@ if isfield(opts, 'detail');             detail             = opts.detail;       
 n = length(directions);
 X        = randn(dim);
 E        = zeros(dim);
+b        = zeros(dim);
 Y2_1     = zeros(dim);
 Y2_2     = zeros(dim);
 Y2_3     = zeros(dim);
